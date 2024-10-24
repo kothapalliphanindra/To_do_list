@@ -1,0 +1,24 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<body style="background-color: wheat;">
+<div class="update">
+<h1>Update_task</h1>
+
+<div class="form">
+<form method="POST" action="">
+    {% csrf_token %}
+
+    {{form}}
+    <input type="submit" name="update_task">
+</form>
+</div>
+</div>
+<style>
+    .update{
+        background-color: wheat;
+    }
+    .form{
+        width: 100%;
+        height: 30px;
+    }
+</style>
+</body>
